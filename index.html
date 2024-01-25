@@ -33,7 +33,7 @@
 
 <body class="font">
     <header>
-        <nav class="flex justify-center mx-auto">
+        <nav class="flex place-items-center mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -65,7 +65,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <button class="btn btn-ghost btn-circle">
+                    <button class="btn btn-ghost btn-circle hidden lg:block">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -76,10 +76,10 @@
                 </div>
             </div>
         </nav>
-        <div class="lg:flex justify-center">
+        <div class="lg:flex justify-center ">
             <div class="carousel w-3/4 mx-auto">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src="Images/1.png" class="w-full lg:h-[550px] px-1" />
+                    <img src="Images/1.png" class="w-full lg:h-[550px] px-1 mx-auto place-items-center" />
                     <div
                         class="absolute px-4 py-4 bg-[#131318] w-[500] left-150 right-5 lg:bottom-20 rounded-2xl hidden lg:block">
                         <h1 class="text-white font-semibold text-2xl">Meet all the heroes from the field</h1>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                    <img src="Images/3.png" class="w-full lg:h-[550px] px-1" />
+                    <img src="Images/3.png" class="w-full lg:h-[550px] px-1 mx-auto place-items-center" />
                     <div class="absolute flex justify-between lg:justify-around left-5 right-200 top-3/4">
                         <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a>
                         <a href="#slide3" class="btn btn-circle text-white bg-black">❯</a>
@@ -106,6 +106,8 @@
             </div>
         </div>
     </header>
+
+
     <main>
         <section>
             <div class="text-center pt-4 px-4 py-4 mt-10 mb-10">
@@ -120,9 +122,10 @@
                     shared love for the ice. </p>
             </div>
 
-            <div class="lg:flex justify-center items-center gap-4">
+            <div class="lg:flex justify-center items-center gap-4 mx-auto">
                 <div class="justify-center items-center">
-                    <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    <div class="flex place-items-center mx-auto radial-progress text-[#FF4240]" style="--value:87;"
+                        role="progressbar">87%</div>
                     <div class="text-center pt-1">
                         <h1 class="text-black font-semibold text-xl">Player Facility</h1>
                         <p class="text-black text-sm mt-1 ">
@@ -132,7 +135,8 @@
                     </div>
                 </div>
                 <div class="justify-center items-center">
-                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <div class="flex place-items-center mx-auto radial-progress text-[#49D293]" style="--value:95;"
+                        role="progressbar">95%</div>
                     <div class="text-center pt-1">
                         <h1 class="text-black font-semibold text-xl">Experienced Coach</h1>
                         <p class="text-black text-sm mt-1 ">
@@ -142,7 +146,8 @@
                     </div>
                 </div>
                 <div class="justify-center items-center">
-                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <div class="flex place-items-center mx-auto radial-progress text-[#FFB546]" style="--value:90;"
+                        role="progressbar">90%</div>
                     <div class="text-center pt-1">
                         <h1 class="text-black font-semibold text-xl">Senior Player</h1>
                         <p class="text-black text-sm mt-1 ">
@@ -153,7 +158,9 @@
                 </div>
 
                 <div class="justify-center items-center">
-                    <div class="radial-progress text-[#FFB546]" style="--value:80;" role="progressbar">80%</div>
+                    <div class="flex place-items-center mx-auto radial-progress text-[#FFB546]" style="--value:80;"
+                        role="progressbar"><span>80%</span>
+                    </div>
                     <div class="text-center pt-1">
                         <h1 class="text-black font-semibold text-xl">Training Gorund</h1>
                         <p class="text-black text-sm mt-1 ">
@@ -769,7 +776,7 @@
                     a
                     shared love for the ice. </p>
             </div>
-            <div class="flex justify-center mx-auto"></div>
+            <div class="mx-auto"></div>
             <div class=" bg-[#BCED6D1A] text-black">
                 <div class="items-center mt-5">
                     <img src="Images/call.png" alt="">
@@ -822,8 +829,6 @@
                                     id="grid-last-name" type="text" placeholder="Enter your phone number">
                             </div>
                         </div>
-
-
                         <div class="flex flex-wrap -mx-3 mb-6">
                             <div class="w-full px-3">
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -842,7 +847,6 @@
                                     Send Message
                                 </button>
                             </div>
-
                         </div>
                         <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
 
@@ -877,6 +881,8 @@
             </div>
         </section>
     </main>
+
+
     <footer class="footer p-10 bg-black text-white mt-10 ">
         <div class="mx-auto">
             <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
