@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Assignment</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'base-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font {
+            font-family: 'Manrope',
+                sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font">
+    <header>
+        <nav class="flex justify-center mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm text-base dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-50">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl btn-#FF4240">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <a class="btn text-white bg-base-color">Button</a>
+                </div>
+            </div>
+        </nav>
+        <div class="flex justify-center">
+            <div class="carousel w-3/4">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full lg:h-[550px] px-1" />
+                    <div class="absolute px-4 py-4 bg-[#131318] w-[500] left-150 right-5 lg:bottom-20 rounded-2xl">
+                        <h1 class="text-white font-semibold text-2xl">Meet all the heroes from the field</h1>
+                        <p class="text-gray-500 text-sm mt-1">
+                            Hockey is a fast-paced and exhilarating team sport played on a rectangular field</p>
+                    </div>
+                    <div class="absolute flex sm:justify-between lg:justify-around left-5 lg:right-200 top-3/4">
+                        <a href="#slide4" class="btn btn-circle text-white bg-black">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full lg:h-[550px] px-1" />
+                    <div class="absolute flex justify-between lg:justify-around left-5 right-200 top-3/4">
+                        <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-white bg-black">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="text-center pt-4 px-4 py-4 mt-10 mb-10">
+                <h1 class="text-black font-semibold text-2xl border-t border-dashed w-3/4 mx-auto pt-5 pb-5">
+                    Professional
+                    Hockeys
+                    Club
+                </h1>
+                <p class="text-black text-sm mt-1 border-b border-dashed w-3/4 mx-auto pb-5">
+                    At Hockey's, we are more than just a team; we are a family <br>bound by our passion for the game and
+                    a
+                    shared love for the ice. </p>
+            </div>
+
+            <div class="lg:flex justify-center items-center gap-4">
+                <div class="justify-center items-center">
+                    <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    <div class="text-center pt-1">
+                        <h1 class="text-black font-semibold text-xl">Player Facility</h1>
+                        <p class="text-black text-sm mt-1 ">
+                            At Hockey's, we understand that a player's <br>environment plays a crucial role
+                            <br>in their performance and enjoyment of the game.
+                        </p>
+                    </div>
+                </div>
+                <div class="justify-center items-center">
+                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <div class="text-center pt-1">
+                        <h1 class="text-black font-semibold text-xl">Experienced Coach</h1>
+                        <p class="text-black text-sm mt-1 ">
+                            At Hockey's is a team of experienced coaches who are <br>not only
+                            passionate about the game but also <br>
+                            dedicated to the development of each player. </p>
+                    </div>
+                </div>
+                <div class="justify-center items-center">
+                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <div class="text-center pt-1">
+                        <h1 class="text-black font-semibold text-xl">Senior Player</h1>
+                        <p class="text-black text-sm mt-1 ">
+                            We recognize the importance of fostering a <br>sense of camaraderie and mentorship <br>
+                            within
+                            our hockey community.</p>
+                    </div>
+                </div>
+
+                <div class="justify-center items-center">
+                    <div class="radial-progress text-[#FFB546]" style="--value:80;" role="progressbar">80%</div>
+                    <div class="text-center pt-1">
+                        <h1 class="text-black font-semibold text-xl">Training Gorund</h1>
+                        <p class="text-black text-sm mt-1 ">
+                            Hockey is a fast-paced and exhilarating team <br>sport played on a rectangular field.
+                            <br>Get best training ground!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center pt-4 px-4 py-4 mt-10 mb-10">
+                <h1 class="text-black font-semibold text-2xl border-t border-dashed w-3/4 mx-auto pt-5 pb-5">
+                    Program Sections
+                </h1>
+                <p class="text-black text-sm mt-1 border-b border-dashed w-3/4 mx-auto pb-5">
+                    At Hockey's, we are more than just a team; we are a family <br>bound by our passion for the game and
+                    a
+                    shared love for the ice. </p>
+            </div>
+            <div class="flex justify-center ">
+                <div class=" p-4">
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img class="w-full" src="Images/2.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mt-10">Junior Program</h2>
+                            <p>At Hockey’s, we believe in investing in the future of the sport. <br> Join [Your Hockey
+                                Club Name]'s Junior Program and embark on a <br> journey where young talents transform
+                                into
+                                future hockey stars.</p>
+                            <div class="card-actions">
+                                <button class="btn bg-[#FF4240] border-none text-white">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="card w-full bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/3.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mt-10">Teenager Program</h2>
+                            <p>Join Hockey's Teenager Program <br>and discover a path to excellence
+                                that
+                                combines skill enhancement <br>with the values that define a true athlete.</p>
+                            <div class="card-actions ">
+                                <button class="btn bg-[#FF4240] border-none text-white">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 mt-4 flex justify-center">
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img class="w-full" src="Images/4.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body mt-10">
+                        <h2 class="card-title pt-10">Professional Program</h2>
+                        <p>Join Hockey's Professional Program <br>and discover a path to excellence
+                            that
+                            combines skill enhancement <br>with the values that define a true athlete. <br>Navigate the
+                            challenges of your teenage years</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#FF4240] border-none text-white">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section><!-- component -->
+            <div class="text-center pt-4 px-4 py-4 mt-10 mb-10">
+                <h1 class="text-black font-semibold text-2xl border-t border-dashed w-3/4 mx-auto pt-5 pb-5">
+                    Our New Products
+                </h1>
+                <p class="text-black text-sm mt-1 border-b border-dashed w-3/4 mx-auto pb-5">
+                    At Hockey's, we are more than just a team; we are a family <br>bound by our passion for the game and
+                    a
+                    shared love for the ice. </p>
+            </div>
+            <div class="grid grid-row-3 gap-4 w-3/4  mx-auto">
+                <div class="flex justify-center gap-4">
+                    <div
+                        class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl p-3 mx-auto border border-gray-200 bg-white">
+                        <div class="w-full md:w-1/3 grid place-items-center">
+                            <img src="Images/5.png" alt="" class="rounded-xl" />
+                        </div>
+                        <div class="w-full border-gray-200 flex flex-col">
+                            <div class="flex justify-between item-center md:w-3/4">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                            <path
+                                                d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_207">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                            <path
+                                                d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_211">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-sm pt-5">Established in 1999, we have been a
+                                stalwart
+                                presence in the hockey community.
+                            </p>
+                            <p class="text-xl font-bold text-[#FF4240] mt-5">
+                                Price - $22.00
+                                <span class="font-normal text-gray-600 text-base">/night</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl p-3 max-w-xs md:max-w-3xl mx-auto border border-gray-200 bg-white">
+                        <div class="w-full md:w-1/3 grid place-items-center">
+                            <img src="Images/6.png" alt="" class="rounded-xl" />
+                        </div>
+                        <div class="w-full border-gray-200 flex flex-col">
+                            <div class="flex justify-between item-center md:w-3/4">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                            <path
+                                                d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_207">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                            <path
+                                                d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_211">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-sm pt-5">Established in 1999, we have been a
+                                stalwart
+                                presence in the hockey community.</p>
+                            <p class="text-xl font-bold text-[#FF4240] mt-5">
+                                Price - $22.00
+                                <span class="font-normal text-gray-600 text-base">/night</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <div
+                        class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl p-3 mx-auto border border-gray-200 bg-white">
+                        <div class="w-full md:w-1/3 grid place-items-center">
+                            <img src="Images/7.png" alt="" class="rounded-xl" />
+                        </div>
+                        <div class="w-full border-gray-200 flex flex-col">
+                            <div class="flex justify-between item-center md:w-3/4">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                            <path
+                                                d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_207">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                            <path
+                                                d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_211">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-sm pt-5">Established in 1999, we have been a
+                                stalwart
+                                presence in the hockey community. </p>
+                            <p class="text-xl font-bold text-[#FF4240] mt-5">
+                                Price - $22.00
+                                <span class="font-normal text-gray-600 text-base">/night</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl p-3 max-w-xs md:max-w-3xl mx-auto border border-gray-200 bg-white">
+                        <div class="w-full md:w-1/3 grid place-items-center">
+                            <img src="Images/8.png" alt="" class="rounded-xl" />
+                        </div>
+                        <div class="w-full border-gray-200 flex flex-col">
+                            <div class="flex justify-between item-center md:w-3/4">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                            <path
+                                                d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_207">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                            <path
+                                                d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_211">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-sm pt-5">Established in 1999, we have been a
+                                stalwart
+                                presence in the hockey community.</p>
+                            <p class="text-xl font-bold text-[#FF4240] mt-5">
+                                Price - $22.00
+                                <span class="font-normal text-gray-600 text-base">/night</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <div
+                        class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl p-3 mx-auto border border-gray-200 bg-white">
+                        <div class="w-full md:w-1/3 grid place-items-center">
+                            <img src="Images/9.png" alt="" class="rounded-xl" />
+                        </div>
+                        <div class="w-full border-gray-200 flex flex-col">
+                            <div class="flex justify-between item-center md:w-3/4">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                            <path
+                                                d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_207">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                            <path
+                                                d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_211">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-sm pt-5">Established in 1999, we have been a
+                                stalwart
+                                presence in the hockey community. </p>
+                            <p class="text-xl font-bold text-[#FF4240] mt-5">
+                                Price - $22.00
+                                <span class="font-normal text-gray-600 text-base">/night</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl p-3 max-w-xs md:max-w-3xl mx-auto border border-gray-200 bg-white">
+                        <div class="w-full md:w-1/3 grid place-items-center">
+                            <img src="Images/10.png" alt="" class="rounded-xl" />
+                        </div>
+                        <div class="w-full border-gray-200 flex flex-col">
+                            <div class="flex justify-between item-center md:w-3/4">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500"
+                                        viewBox="0 0 20 20" fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        5.0
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_207)">
+                                            <path
+                                                d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_207">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        20
+                                    </p>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_6_211)">
+                                            <path
+                                                d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777"
+                                                stroke="#131318" stroke-opacity="0.5" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_211">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 -0.000244141)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p class="text-gray-600 text-sm ml-1">
+                                        200
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 class="font-black text-gray-800 md:text-3xl text-xl">World Cup Flags Football</h3>
+                            <p class="md:text-lg text-gray-500 text-sm pt-5">Established in 1999, we have been a
+                                stalwart
+                                presence in the hockey community.</p>
+                            <p class="text-xl font-bold text-[#FF4240] mt-5">
+                                Price - $22.00
+                                <span class="font-normal text-gray-600 text-base">/night</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center pt-4 px-4 py-4 mt-10 mb-10">
+                <h1 class="text-black font-semibold text-2xl border-t border-dashed w-3/4 mx-auto pt-5 pb-5">
+                    Clients Question
+                </h1>
+                <p class="text-black text-sm mt-1 border-b border-dashed w-3/4 mx-auto pb-5">
+                    At Hockey's, we are more than just a team; we are a family <br>bound by our passion for the game and
+                    a
+                    shared love for the ice. </p>
+            </div>
+            <div class="lg:flex items-center justify-center mx-auto w-3/4 border border-gray-200">
+                <img class="max-w-sm items-center justify-center mx-auto lg:ml-auto mt-5" src="Images/11.png" alt="">
+                <div class="mt-10 mx-auto lg:mr-auto lg:ml-5 lg:w-1/3">
+                    <div class="collapse collapse-plus border-t border-gray-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-sm">We provide our players with cutting-edge, top-of-the-line gear to enhance
+                                performance, safety, and overall enjoyment of the sport.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-t border-gray-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-t border-gray-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Private lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-t border-gray-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-t border-gray-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus border-t border-gray-200">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="text-center pt-4 px-4 py-4 mt-10 mb-10">
+                <h1 class="text-black font-semibold text-2xl border-t border-dashed w-3/4 mx-auto pt-5 pb-5">
+                    Get In Touch
+                </h1>
+                <p class="text-black text-sm mt-1 border-b border-dashed w-3/4 mx-auto pb-5">
+                    At Hockey's, we are more than just a team; we are a family <br>bound by our passion for the game and
+                    a
+                    shared love for the ice. </p>
+            </div>
+            <div class="flex justify-center mx-auto"></div>
+            <div class=" bg-[#BCED6D1A] text-black">
+                <div class="items-center mt-5">
+                    <img src="Images/call.png" alt="">
+                    <span class="text-sm">Phone Number :
+                    </span>
+                    <span class="text-sm font-semibold">
+                        <br>(+62) 123-321-543</span>
+                </div>
+            </div>
+            <div class="mx-auto p-5 lg:flex justify-center">
+                <div class="grid">
+                    <form class="md:col-span-8 p-10">
+                        <div class="flex flex-wrap -mx-3 mb-6">
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Your Name
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                    id="grid-first-name" type="text" placeholder="Enter your full name">
+                            </div>
+                            <div class="w-full md:w-1/2 px-3">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Your Email
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap -mx-3 mb-6">
+                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-first-name">
+                                    Subject
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                    id="grid-first-name" type="text" placeholder="Enter your subject">
+                            </div>
+                            <div class="w-full md:w-1/2 px-3">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-last-name">
+                                    Phne Number
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="grid-last-name" type="text" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+
+
+                        <div class="flex flex-wrap -mx-3 mb-6">
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="grid-password">
+                                    Message
+                                </label>
+                                <textarea rows="10"
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 "
+                                    placeholder="Write your message"></textarea>
+                            </div>
+                            <div class="flex justify-between w-full px-3">
+
+                                <button
+                                    class="w-full shadow bg-[#FF4240] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                                    type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+
+                        </div>
+                        <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+
+                            <nav>
+                                <h1 class="text-black font-semibold text-2xl">Social Media</h1>
+                                <div class="grid grid-flow-col gap-4">
+                                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" class="fill-current">
+                                            <path
+                                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                            </path>
+                                        </svg></a>
+                                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" class="fill-current">
+                                            <path
+                                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                            </path>
+                                        </svg></a>
+                                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" class="fill-current">
+                                            <path
+                                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                            </path>
+                                        </svg></a>
+                                </div>
+                            </nav>
+
+                        </footer>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-black text-white mt-10 ">
+        <div class="mx-auto">
+            <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                Contact
+            </h6>
+            <p>Get in touch with our creative team. Let's talk! <br>Please follow the links to get in touch with us.</p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" class="mr-3 h-5 w-5">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path
+                        d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                </svg>
+                info@example.com
+            </p>
+            <p class="mb-4 flex items-center justify-center md:justify-start">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red" class="mr-3 h-5 w-5">
+                    <path fill-rule="evenodd"
+                        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                        clip-rule="evenodd" />
+                </svg>
+                + 01 234 567 88
+            </p>
+        </div>
+
+        <div>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Career</a>
+            <a class="link link-hover">News and Articles</a>
+            <a class="link link-hover">Legal Notice</a>
+        </div>
+        <div>
+            <p class="footer-title">Support</p>
+            <a class="link link-hover">Help Center</a>
+            <a class="link link-hover">FAQ</a>
+            <a class="link link-hover">Ticket Support</a>
+            <a class="link link-hover">Contact Us</a>
+        </div>
+
+
+        <nav class="mr-auto lg:justify-start items-center">
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockys for kids</a>
+            <a class="link link-hover">Hockys for adults</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
